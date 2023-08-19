@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProcessActivity"
+    android:background="@drawable/bakgrund"
+    >
+    <!-- <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_finder"/>
+        outskirt: #eacafe
+        soft: #994acc
+        dark: #480077
+        -->
+
+
+    <ImageView
+        android:id="@+id/outskirtPurple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#DCFECA" />
+
+
+    <ImageView
+        android:id="@+id/softPurple"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/darkPurple"
+        android:layout_height="200dp"
+        android:background="#6CC33E"
+        android:alpha="0"/>
+    <!--android:background="#ee8b83"-->
+
+
+    <ImageView
+        android:id="@+id/darkPurple"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0F2C00"
+        android:alpha="0"/>
+<!--
+    <ImageButton
+        android:id="@+id/camImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:contentDescription="Camera Button"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_camera_alt_24" />
+        -->
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Camera Button"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/newButton"
+        android:text="Processing"
+         />
+
+    <!--
+    <Button
+        android:id="@+id/status2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Camera Button"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Processed frames: 100"
+        />
+    <Button
+        android:id="@+id/status3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Camera Button"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Encoded  frames: 100"
+        />
+        -->
+
+    <Button
+        android:id="@+id/status1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="133dp"
+        android:backgroundTint="@color/newButton"
+        android:contentDescription="Camera Button"
+        android:text="Total frames: \n 0" />
+
+    <Button
+        android:id="@+id/Pupils"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/darkPurple"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="133dp"
+        android:backgroundTint="@color/newButton"
+        android:contentDescription="Camera Button"
+        android:text="Pupils found: \n 0" />
+
+    <Button
+        android:id="@+id/processed"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="Shows processed frames"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/newButton"
+        android:text="Encoded frames: \n 0"
+
+        />
+
+    <Button
+        android:id="@+id/total"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="Shows processed frames"
+        android:layout_above="@id/darkPurple"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/newButton"
+        android:text="Processed frames: \n 0"
+        />
+
+
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="500dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+
+
+
+</RelativeLayout>
